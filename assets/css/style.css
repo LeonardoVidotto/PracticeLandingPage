@@ -110,6 +110,7 @@ input[type=submit]{
     background-color: #abe600;
     border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
 
 }
 input[type=submit]:hover{
