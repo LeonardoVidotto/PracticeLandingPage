@@ -1,0 +1,228 @@
+*{
+    font-family: arial;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: #121212;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.menu {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+nav ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    padding: 15px;
+    color: #7a7a7a;
+    font-size: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: #7a7a7a;
+}
+nav li a:hover{
+    color: #c2c2c2;
+}
+.login {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 40px;
+}
+section{
+    display: flex;
+    align-items: center;
+}
+section img{
+    width: 700px;
+    height: 600px;
+    margin-left: 30px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.description h3{
+    margin-top: 30px;
+    color: #7a7a7a;
+}
+.description td{
+    align-items: center;
+    padding: 10px;
+    color:#7a7a7a;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #abe600;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #000000;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    background-color: #abe600;
+}
+.order_button a:hover{
+    margin-top: 50px;
+    border: 1px solid #abe600;
+    color: #abe600;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: #000000;
+}
+input[type=submit]{
+    margin-top: 50px;
+    outline: 0;
+    border: 2px solid #000000;
+    background-color: #abe600;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+input[type=submit]:hover{
+    background-color: #000000;
+    color:#abe600;
+}
+.carrinho{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 200px;
+}
+.carrinho img{
+    width: 70px;
+    height: 70px;
+    margin-right: 50px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footersection{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #7a7a7a;
+}
+.footerimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+input[type=email]{
+    border-radius: 10px;
+    background-color: #b9b9b9;
+    padding: 3px;
+    margin-top: 5px;
+}
+.newsletter{
+    text-align: left;
+    font-size: 13px;
+    color: #7a7a7a;
+    padding: 15px;
+    width: 350px;
+}
+.copy{
+    color: #7a7a7a;
+    text-align: right;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 13px;
+    width: 350px;
+}
+
+@media (max-width:425px){
+        header .container{
+            width: 360px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            width: 300px;
+            padding: 0px;
+        }
+        .login{
+            width: 30pxpx;
+            justify-content: left;
+            padding: 0px;
+        }
+        nav ul li{
+            font-size: 9px;
+        }
+        section{
+            width: 360px;
+            flex-wrap: wrap;
+        }
+        section img{
+            width: 360px;
+        }
+        .description {
+            width: 360px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-left: 70px;
+        }
+        .order{
+            align-items: center;
+            width: 360px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 70px;
+        }
+        .newsletter{
+            font-size: 10px;
+        }
+        .copy{
+            font-size: 10px;
+        }
+        input[type=email]{
+            border-radius: 10px;
+            padding: 2px;
+            width: 150px;
+            height: 10px;
+        }
+}
+
